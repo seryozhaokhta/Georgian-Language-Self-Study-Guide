@@ -1,0 +1,59 @@
+:root {
+  --font-family: Helvetica, sans-serif;
+  --background-color: black;
+  --text-color: rgb(220, 220, 220);
+  --text-color-secondary: rgba(255, 255, 255, 0.5);
+  --border-color: rgba(255, 255, 255, 0.19);
+  --hover-bg-color: gray;
+  --word-font-size: 20px;
+  --pronunciation-font-size: 12px;
+}
+
+body,
+html {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Добавлено для растяжения body на всю высоту страницы */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+}
+
+footer {
+  margin-top: auto; /* Прижимает футер к низу */
+}
+
+#content-link,
+#back-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#content-link span,
+#back-link span {
+  margin-left: 5px;
+}
+
+#content-icon,
+#back-icon,
+#future-logo {
+  height: 20px;
+  width: 20px;
+}
+
+#future-logo {
+  border-radius: 50%;
+  background-color: white;
+}

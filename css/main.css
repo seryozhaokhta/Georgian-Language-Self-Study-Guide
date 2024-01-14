@@ -1,0 +1,76 @@
+#alphabet-title {
+  text-align: left;
+  opacity: 0.5;
+  color: var(--text-color);
+  font-family: var(--font-family), sans-serif;
+  margin: 20px 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  max-width: 40%;
+}
+
+#alphabet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+}
+
+.letter {
+  font-size: 27px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 40px;
+  position: relative;
+  width: calc(20% - 12px);
+  transition: flex-grow 0.3s ease;
+}
+
+.letter:hover {
+  background-color: var(--hover-bg-color);
+  flex-grow: 2;
+}
+
+.words-container {
+  display: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.word {
+  font-size: var(--word-font-size);
+  margin-bottom: 5px;
+  color: var(--background-color);
+}
+
+.original-word {
+  font-weight: bold;
+  color: gray;
+}
+
+.transcription,
+.translation,
+.pronunciation {
+  font-style: italic;
+}
+
+.pronunciation {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: var(--text-color-secondary);
+  font-size: var(--pronunciation-font-size);
+}
