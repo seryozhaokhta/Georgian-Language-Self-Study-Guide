@@ -1,5 +1,9 @@
 # Georgian Language Self-Study Guide
 
+
+
+![alp](exampleAlphabet.gif)
+
 This project is an interactive self-study guide for learning the Georgian language. It features a unique approach to learning the alphabet and words, making it an engaging experience for users.
 
 ## Features
